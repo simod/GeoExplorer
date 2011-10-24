@@ -7,7 +7,8 @@ var urls = [
     [(/^\/(proxy)/), require("./root/proxy").app],
     [(/^\/(maps(\/\d+)?)/), require("./root/maps").app],
     [(/^\/(composer)/), require("./root/composer").app],
-    [(/^\/(viewer(.html)?)/), require("./root/viewer").app]
+    [(/^\/(viewer(.html)?)/), require("./root/viewer").app],
+	[(/^\/(start)/), require("./root/start").app]
 ];
 
 // debug mode loads unminified scripts
